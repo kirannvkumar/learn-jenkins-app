@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         // This is build stage
-        /* stage('Build') {
+        stage('Build') {
             agent {
                 docker {
                     image 'node:18-alpine'
@@ -19,8 +19,8 @@ pipeline {
                     npm run build
                     ls -la
                 '''
-            }*/
-        }
+            }
+        
 
         stage('Test') {
             agent {
