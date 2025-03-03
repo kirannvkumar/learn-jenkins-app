@@ -20,5 +20,10 @@ pipeline {
                 '''
             }
         }
+
+        stage('test stage'){
+            ls -l ./build/index.html
+            npm test
+        }
     }
 }
